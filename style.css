@@ -1,4 +1,132 @@
-*{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px; /* Added padding for better spacing on smaller screens */
+}
+
+.card, .tact {
+    background-color: #f5f5dc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.links {
+    padding: 7px;
+    list-style-type: square;
+}
+
+.links:hover {
+    color: #fff;
+}
+
+.taco {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+img {
+    margin: 15px;
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+
+.lts, .trivia {
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+table, tr, th, td, caption {
+    background-color: #fffaf0;
+    border: 1px solid #ddd;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+    margin-bottom: 5px;
+}
+
+.menu {
+    margin-left: 50px;
+}
+
+.top, .time, .location, .address {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.submit, .reset {
+    margin: 7px;
+}
+
+.reset {
+    width: 50px;
+}
+
+.submit:hover {
+    color: #fff;
+}
+
+footer {
+    margin-bottom: 15px;
+}
+
+/* Media Queries for mobile devices */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .card, .tact {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 15px;
+    }
+
+    img {
+        width: 100%;
+        max-width: none; /* Allow image to take full width on small screens */
+    }
+
+    .menu {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card, .tact {
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .menu {
+        margin-left: 10px;
+    }
+
+    table, tr, th, td, caption {
+        font-size: 0.8rem; /* Adjust font size for smaller screens */
+    }
+}
+
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -117,4 +245,4 @@ table, tr, th, td, caption{
 
 footer{
     margin-bottom: 15px;
-}
+} */
